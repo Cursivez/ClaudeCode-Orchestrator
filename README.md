@@ -1,4 +1,4 @@
-# Claude Code MCP Server
+# Claude Code Orchestrator
 
 A Multi-Context Protocol (MCP) server that provides Claude.ai with specialized tools for code editing, formatting, reviewing, and context analysis through SSE (Server-Sent Events).
 
