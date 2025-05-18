@@ -1,0 +1,13 @@
+{
+  "name": "mcp-proxy-server",
+  "version": "1.0.0",
+  "description": "Proxy server for multiple MCP instances",
+  "main": "proxy-server.js",
+  "scripts": {
+    "start": "node proxy-server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "http-proxy-middleware": "^2.0.6"
+  }
+}

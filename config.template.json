@@ -1,0 +1,18 @@
+{
+  "ClaudeCode": {
+    "command": "wsl.exe",
+    "args": [
+      "bash",
+      "-c",
+      "export CC_USER_DIRECTORY='/path/to/your/projects' && export CLAUDE_EXECUTABLE_PATH='/path/to/claude' && export DEBUG='mcp:*' && cd /path/to/cc-mcp/simple-claude-code-mcp && node index.js"
+    ]
+  },
+  "SequentialThinking": {
+    "command": "wsl.exe",
+    "args": [
+      "bash",
+      "-c",
+      "cd /path/to/cc-mcp/mcp-sequentialthinking-tools && npm install && npm run build && node sse-server-sequential-thinking.js"
+    ]
+  }
+}

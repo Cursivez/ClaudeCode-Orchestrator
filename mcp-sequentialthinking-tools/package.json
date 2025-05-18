@@ -1,0 +1,70 @@
+{
+	"name": "mcp-sequentialthinking-tools",
+	"version": "0.0.2",
+	"description": "MCP server for Sequential Thinking Tools",
+	"type": "module",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"bin": {
+		"mcp-sequentialthinking-tools": "./dist/index.js"
+	},
+	"files": [
+		"dist",
+		"README.md",
+		"LICENSE"
+	],
+	"scripts": {
+		"build": "tsc",
+		"build:unix": "tsc && chmod +x dist/index.js",
+		"start": "node dist/index.js",
+		"start:sse": "node sse-server-sequential-thinking.js",
+		"dev": "npx @modelcontextprotocol/inspector dist/index.js",
+		"changeset": "changeset",
+		"version": "changeset version",
+		"release": "pnpm run build && changeset publish"
+	},
+	"keywords": [
+		"mcp",
+		"model-context-protocol",
+		"sequential-thinking",
+		"problem-solving",
+		"tool-recommendation",
+		"decision-making",
+		"thought-process",
+		"step-by-step",
+		"llm",
+		"ai",
+		"branching-thoughts",
+		"thought-revision",
+		"tool-analysis",
+		"problem-breakdown",
+		"solution-planning",
+		"adaptive-thinking",
+		"reflective-analysis",
+		"tool-confidence"
+	],
+	"author": "Scott Spence",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/spences10/mcp-sequentialthinking-tools.git"
+	},
+	"bugs": {
+		"url": "https://github.com/spences10/mcp-sequentialthinking-tools/issues"
+	},
+	"homepage": "https://github.com/spences10/mcp-sequentialthinking-tools#readme",
+	"dependencies": {
+		"@modelcontextprotocol/sdk": "1.11.0",
+		"chalk": "^5.4.1",
+		"cors": "^2.8.5",
+		"dotenv": "^16.0.3",
+		"express": "^4.18.2",
+		"node-fetch": "^3.3.2",
+		"zod": "^3.24.4"
+	},
+	"devDependencies": {
+		"@changesets/cli": "^2.29.3",
+		"@types/node": "^22.15.14",
+		"typescript": "^5.8.3"
+	}
+}

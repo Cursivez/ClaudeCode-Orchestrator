@@ -1,0 +1,2 @@
+@echo off
+wsl.exe bash -c "export CC_USER_DIRECTORY='/path/to/project/directory' && export CLAUDE_EXECUTABLE_PATH='/path/to/claude/executable' && export DEBUG='mcp:*' && cd /path/to/cc-mcp/simple-claude-code-mcp && node sse-server-claude.js"
